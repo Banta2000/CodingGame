@@ -3,22 +3,39 @@ HOME_PC = 1
 
 
 def myPrint(*args):
-    print(*args, file=sys.stderr, flush=True)
+    if HOME_PC:
+        print(*args)
+    else:
+        print(*args, file=sys.stderr, flush=True)
 
 
 def get_input() -> tuple:
     if HOME_PC:
-        piece_size = 4
-        n_pieces = 4
         n_columns = 2
         n_rows = 2
-        picture_width = 7
-        picture_height = 7
         p1 = ["+ B#","  *#","C**#","####"]
         p2 = ["####","#**A","#*  ","#D +"]
         p3 = ["####","A**#","  *#","+ B#"]
         p4 = ["#D +","#*  ","#**C","####"]
         pieces = [p1, p2, p3, p4]
+
+
+        n_columns = 8
+        n_rows = 4
+
+        f = open('input.txt', 'r')
+        pieces = []
+        for _ in range(n_columns * n_rows):
+            tmp = []
+            for _ in range(6):
+                tmp.append(f.readline()[:-1])
+            pieces.append(tmp)
+
+        piece_size = len(pieces[0])
+        n_pieces = len(pieces)
+        
+
+        
     else:
         # piece_size: size of a piece (its width and its height)
         # n_pieces: number of pieces (= nColumns * nRows)
@@ -37,15 +54,15 @@ def get_input() -> tuple:
                 piece.append(input())
             pieces.append(piece)
 
-        if True:
-            print("piece_size, n_pieces, n_columns, n_rows, picture_width, picture_height")
-            print(piece_size, n_pieces, n_columns, n_rows, picture_width, picture_height)
+        if False:
+            myPrint("piece_size, n_pieces, n_columns, n_rows, picture_width, picture_height")
+            myPrint(piece_size, n_pieces, n_columns, n_rows, picture_width, picture_height)
 
-            print("pieces")
+            myPrint("pieces")
             for piece in pieces:
-                print("")
+                myPrint("")
                 for line in piece:
-                    print(line)
+                    myPrint(line)
 
     return n_rows, n_columns, pieces
 
@@ -59,7 +76,7 @@ class Piece:
         self.edges["bottom"] = self.piece[self.size - 1]
         self.edges["left"] = "".join([self.piece[i][0] for i in range(self.size)])
         self.edges["right"] = "".join([self.piece[i][self.size - 1] for i in range(self.size)])
-        
+
     def __repr__(self) -> str:
         s = ""
         for line in self.piece:
@@ -154,36 +171,49 @@ class Game:
         self.piece_size = pieces[0].size
         self.pieces_num = len(pieces)
         self.board = {}
-        self.board[(0,0)] = (1, 0)
-        self.board[(0,1)] = (2, 0)
-        self.board[(1,0)] = (3, 0)
-        self.board[(1,1)] = (0, 0)
+        for i in range(n_rows):
+            for j in range(n_columns):
+                self.board[(i, j)] = None
+        self.board[(0, 0)] = self.find_corner_pieces()[0]
 
     def __repr__(self) -> str:
+        # Board is a dict. Returns array of [](piece_num, rotation)]
         def _get_line_of_pieces(board, board_line):
             line_of_pieces = []
-            for row in range(n_rows):
+            for row in range(n_columns):
                 line_of_pieces.append(board[(board_line, row)])
             return line_of_pieces
-        
+
+        # Returns array of string, each line / string is a line in the picture
         def _assemble_line_of_pieces(line_of_pieces):
             s = ["" for _ in range(self.piece_size)]
             for piece_num, rotation in line_of_pieces:
                 temp_piece = self.pieces[piece_num].copy()
                 temp_piece.rotate_left(rotation)
-                for i in range(self.piece_size):
-                    s[i] += temp_piece.piece[i]                    
+                for i, line in enumerate(temp_piece.piece):
+                    s[i] += line[:-1]
+            for i, line in enumerate(s):
+                s[i] += "#"
             return s
 
         endresult = []
         for line_of_board in range(n_rows):
             line_of_pieces = _get_line_of_pieces(self.board, line_of_board)
-            new_s = _assemble_line_of_pieces(line_of_pieces)
-            new_s = "\n".join(new_s)
-            endresult.append(new_s)
+            endresult += _assemble_line_of_pieces(line_of_pieces)[:-1]
+        endresult.append(endresult[0])
         endresult = "\n".join(endresult) 
         return endresult
-        
+
+    def find_corner_pieces(self):
+        res = []
+        end_edge = "".join(["#" for _ in range(self.piece_size)])
+        res += [(piece_num, 0) for piece_num, piece in enumerate(self.pieces) if piece.edges["top"] == end_edge and piece.edges["left"] == end_edge]
+        res += [(piece_num, 1) for piece_num, piece in enumerate(self.pieces) if piece.edges["top"] == end_edge and piece.edges["right"] == end_edge]
+        res += [(piece_num, 2) for piece_num, piece in enumerate(self.pieces) if piece.edges["bottom"] == end_edge and piece.edges["left"] == end_edge]
+        res += [(piece_num, 3) for piece_num, piece in enumerate(self.pieces) if piece.edges["bottom"] == end_edge and piece.edges["right"] == end_edge]
+        return res
+
+    # Returns array with (string, edge_label) ex [("a2d3", top), ..]
     def get_requirements_for_position(self, pos):
         def _get_edge(pos, side):
             counterEdge = {"top": "bottom", "right": "left", "bottom": "top", "left": "right"}
@@ -216,47 +246,65 @@ class Game:
         res += _get_edge(left_pos, "right")
         return res
 
+    # Returs array with (piecen_num, rotation) for all pieces that match this edge
+    def find_pieces_with_single_matching_edge(self, edge, side):
+        result = []
+        for piece_num, piece in enumerate(self.pieces):
+            rotation_options = piece.find_matching_edge_with_side(edge, side)
+            options = [(piece_num, r) for r in rotation_options]
+            result += options
+        return result
+
+    # Returns array with (piecen_num, rotation) for all pieces that match all edges
+    def find_pieces_with_multiple_matching_edges(self, requirements):
+        res_counter = {}
+        for edge, side in requirements:
+            options = self.find_pieces_with_single_matching_edge(edge, side)
+ #           print("looking for", edge, side, "found", options)
+            for option in options:
+                if option not in res_counter:
+                    res_counter[option] = 0
+                res_counter[option] += 1
+ #       print("final counter", res_counter)
+        final_options = [option for option in res_counter if res_counter[option] == len(requirements)]
+ #       print("final winners", final_options)
+        return final_options
+
+    # Finds possible solutions for pos and then calls itself for every solution
+    def dfs(self, piece_num):
+        global solution
+
+        myPrint("solving", piece_num)
+        if piece_num == self.pieces_num:
+            solution = {k:v for k, v in self.board.items()}
+            
+        row = piece_num // n_columns
+        col = piece_num % n_columns
+        pos = (row, col)
+
+        reqs = self.get_requirements_for_position(pos)
+        options = self.find_pieces_with_multiple_matching_edges(reqs)
+        used_pieces = [v[0] for k, v in self.board.items() if v is not None]
+        options = [option for option in options if option[0] not in used_pieces]
+
+#        print("looking for", piece_num, "at", pos, "with reqs", reqs, "found options:", len(options))
+
+        for option in options:
+            self.board[pos] = option
+            self.dfs(piece_num + 1)
+            self.board[pos] = None
 
 
 # ********************************************************
 
 n_rows, n_columns, raw_pieces = get_input()
 pieces = [Piece(p) for p in raw_pieces]
+
+solution = {}
 game = Game(pieces)
 
-for p in pieces: print(p)
-p = pieces[0]
-
-e = "+ B#"
-e = "#B +"
-
-e1 = "+ C#"
-e2 = "####"
-
+game.dfs(1)
+print("finished dfs")
+game.board = solution
+myPrint(solution)
 print(game)
-
-game.board[(0, 1)] = None
-
-p = (0, 0)
-r = game.get_requirements_for_position(p)
-print(r)
-
-#TODO get_requirements_for_position gibt mir ein array mit edges (und
-# deren bennenung die ich benutzen kann um das richtige teil zu filtern.
-# wichtig ist, dass die leeren felder der Matrize mit None gefüllt sind
-# nun kan nich ein teil setzen, und nach dem nächsten teil suchen
-
-
-""" num_pieces = len(pieces)
-for piece_i in range(num_pieces):
-    row = piece_i // n_columns
-    col = piece_i % n_columns
-    center_p = (row, col)
-    print("Examining", row, col, game.board[(row, col)])
-    
-    
-
-    print("")
-        
- """    
-    
