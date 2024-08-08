@@ -166,7 +166,7 @@ class Piece:
 
 
 class Game:
-    def __init__(self, pieces) -> None:
+    def __init__(self, pieces, corner_piece) -> None:
         self.pieces = pieces
         self.piece_size = pieces[0].size
         self.pieces_num = len(pieces)
@@ -174,7 +174,7 @@ class Game:
         for i in range(n_rows):
             for j in range(n_columns):
                 self.board[(i, j)] = None
-        self.board[(0, 0)] = self.find_corner_pieces()[0]
+        self.board[(0, 0)] = self.find_corner_pieces()[corner_piece]
 
     def __repr__(self) -> str:
         # Board is a dict. Returns array of [](piece_num, rotation)]
@@ -187,11 +187,16 @@ class Game:
         # Returns array of string, each line / string is a line in the picture
         def _assemble_line_of_pieces(line_of_pieces):
             s = ["" for _ in range(self.piece_size)]
-            for piece_num, rotation in line_of_pieces:
-                temp_piece = self.pieces[piece_num].copy()
-                temp_piece.rotate_left(rotation)
-                for i, line in enumerate(temp_piece.piece):
-                    s[i] += line[:-1]
+            for entry in line_of_pieces:
+                if entry is None:
+                    for i in range(self.piece_size):
+                        s[i] += "".join(["." for _ in range(self.piece_size-1)])
+                else:
+                    piece_num, rotation = entry
+                    temp_piece = self.pieces[piece_num].copy()
+                    temp_piece.rotate_left(rotation)
+                    for i, line in enumerate(temp_piece.piece):
+                        s[i] += line[:-1]
             for i, line in enumerate(s):
                 s[i] += "#"
             return s
@@ -209,8 +214,8 @@ class Game:
         end_edge = "".join(["#" for _ in range(self.piece_size)])
         res += [(piece_num, 0) for piece_num, piece in enumerate(self.pieces) if piece.edges["top"] == end_edge and piece.edges["left"] == end_edge]
         res += [(piece_num, 1) for piece_num, piece in enumerate(self.pieces) if piece.edges["top"] == end_edge and piece.edges["right"] == end_edge]
-        res += [(piece_num, 2) for piece_num, piece in enumerate(self.pieces) if piece.edges["bottom"] == end_edge and piece.edges["left"] == end_edge]
-        res += [(piece_num, 3) for piece_num, piece in enumerate(self.pieces) if piece.edges["bottom"] == end_edge and piece.edges["right"] == end_edge]
+        res += [(piece_num, 2) for piece_num, piece in enumerate(self.pieces) if piece.edges["bottom"] == end_edge and piece.edges["right"] == end_edge]
+        res += [(piece_num, 3) for piece_num, piece in enumerate(self.pieces) if piece.edges["bottom"] == end_edge and piece.edges["left"] == end_edge]
         return res
 
     # Returns array with (string, edge_label) ex [("a2d3", top), ..]
@@ -274,7 +279,6 @@ class Game:
     def dfs(self, piece_num):
         global solution
 
-        myPrint("solving", piece_num)
         if piece_num == self.pieces_num:
             solution = {k:v for k, v in self.board.items()}
             
@@ -295,16 +299,22 @@ class Game:
             self.board[pos] = None
 
 
+    def is_first_piece_correctly_oriented(self):
+        rotation = [rot for piece, rot in self.board.values() if piece == 0][0]
+        return rotation == 0
+
+
 # ********************************************************
 
 n_rows, n_columns, raw_pieces = get_input()
 pieces = [Piece(p) for p in raw_pieces]
-
 solution = {}
-game = Game(pieces)
 
-game.dfs(1)
-print("finished dfs")
-game.board = solution
-myPrint(solution)
+for cornerpiece in range(4):
+    game = Game(pieces, cornerpiece)
+    game.dfs(1)
+    game.board = solution
+    if solution and game.is_first_piece_correctly_oriented():
+        break
+
 print(game)
