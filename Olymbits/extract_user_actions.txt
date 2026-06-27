@@ -1,0 +1,912 @@
+Standard Output Stream:
+UP
+001
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+002
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+003
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+UP
+004
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+005
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+006
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+UP
+007
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+008
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+009
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+UP
+010
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+RIGHT
+011
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+012
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+013
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+014
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Archery
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Game over: Diving
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+UP
+015
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Hurdle Race
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Game over: Roller Speed Skating
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+DOWN
+016
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+RIGHT
+017
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+LEFT
+018
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+019
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+020
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+UP
+021
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+RIGHT
+022
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+DOWN
+023
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+LEFT
+024
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+UP
+025
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+LEFT
+026
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+UP
+027
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+028
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Archery
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+UP
+029
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+LEFT
+030
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Diving
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+UP
+031
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Game Summary:
+Game over: Roller Speed Skating
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+LEFT
+032
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+033
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+034
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+035
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+LEFT
+036
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+DOWN
+037
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+UP
+038
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Game Summary:
+Game over: Hurdle Race
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+UP
+039
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+040
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+LEFT
+041
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+RIGHT
+042
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Game Summary:
+Game over: Archery
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+UP
+043
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+044
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+045
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Game Summary:
+Game over: Diving
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+LEFT
+046
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+UP
+047
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Roller Speed Skating
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+LEFT
+048
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+049
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+UP
+050
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+051
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+052
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+053
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+LEFT
+054
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+UP
+055
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Archery
+Banta2000 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+DOWN
+056
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+RIGHT
+057
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+058
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+DOWN
+059
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+RIGHT
+060
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Game Summary:
+Game over: Hurdle Race
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+RIGHT
+061
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Game Summary:
+Game over: Diving
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+LEFT
+062
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+RIGHT
+063
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Game Summary:
+Game over: Roller Speed Skating
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+RIGHT
+064
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+RIGHT
+065
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+RIGHT
+066
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+DOWN
+067
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+LEFT
+068
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+069
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Game Summary:
+Game over: Archery
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+UP
+070
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+LEFT
+071
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+RIGHT
+072
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+LEFT
+073
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+DOWN
+074
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+UP
+075
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+076
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Game Summary:
+Game over: Diving
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+RIGHT
+077
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+UP
+078
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+079
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Roller Speed Skating
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+UP
+080
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+DOWN
+081
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Game Summary:
+Game over: Hurdle Race
+Banta2000 earns a BRONZE medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+LEFT
+082
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Game Summary:
+Game over: Archery
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+UP
+083
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+RIGHT
+084
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+085
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+DOWN
+086
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+RIGHT
+087
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+DOWN
+088
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+089
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+UP
+090
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+RIGHT
+091
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+092
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Game Summary:
+Game over: Diving
+Banta2000 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Boss 4 earns a GOLD medal
+Standard Output Stream:
+UP
+093
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Standard Output Stream:
+LEFT
+094
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+LEFT
+095
+100
+Standard Output Stream:
+UP
+Standard Output Stream:
+UP
+Game Summary:
+Game over: Archery
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Game over: Roller Speed Skating
+Banta2000 earns a GOLD medal
+Boss 4 earns a SILVER medal
+Boss 4 earns a SILVER medal
+Standard Output Stream:
+LEFT
+096
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+UP
+097
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+098
+100
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+DOWN
+Standard Output Stream:
+UP
+099
+100
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+LEFT
+Standard Output Stream:
+RIGHT
+100
+100
+Standard Output Stream:
+RIGHT
+Standard Output Stream:
+RIGHT

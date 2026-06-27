@@ -1,0 +1,56 @@
+=== Input 1 ===
+rifleman 20 1 50 20
+shaman 15 2 60 10
+
+=== Output 1 ===
+18 50
+
+=== Input 2 ===
+shaman 15 2 60 10
+rifleman 20 1 50 20
+
+=== Output 2 ===
+50 18
+
+=== Input 3 ===
+rifleman 20 1 30 20
+rifleman 20 1 30 20
+
+=== Output 3 ===
+21 30
+
+=== Input 4 ===
+archer 20 3 60 6
+swordsman 15 0 60 10
+
+=== Output 4 ===
+0 22
+
+=== Input 5 ===
+light 40 3 60 11
+heavy 30 2 40 22
+
+=== Output 5 ===
+16 18
+
+=== Input 6 ===
+light 40 3 60 11
+woundedheavy 20 2 40 22
+
+=== Output 6 ===
+10 60
+
+=== Input 7 ===
+woundedheavy 20 2 40 22
+light 40 3 60 11
+
+=== Output 7 ===
+54 16
+
+=== Input 8 ===
+spearman 30 3 60 6
+gorilla 50 2 40 10
+
+=== Output 8 ===
+0 0
+

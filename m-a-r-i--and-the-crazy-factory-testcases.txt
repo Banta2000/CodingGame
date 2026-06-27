@@ -1,0 +1,208 @@
+=== Input 1 ===
+p1 tr p2
+####2
+####.
+####.
+####.
+####.
+####.
+##E..
+
+=== Output 1 ===
+p2
+p1 p2
+p1 tr p2
+
+=== Input 2 ===
+p1 p1 nop
+#####
+##.##
+##E##
+##.##
+##.##
+##.##
+##0##
+
+=== Output 2 ===
+p1
+p1 nop
+p1 p1 nop
+
+=== Input 3 ===
+p1 p2 nop tr
+#####
+....#
+..E##
+..#2#
+....#
+....#
+#####
+
+=== Output 3 ===
+p2
+tr p2
+p1 tr p2
+p1 tr p2 nop
+
+=== Input 4 ===
+tr tl p1 p1 p2
+#####
+##...
+##.#.
+##.#E
+##0#.
+##.#.
+#####
+
+=== Output 4 ===
+p1
+p1 p1
+tr p1 p1
+tr p1 p1 tl
+
+=== Input 5 ===
+tr p1 p1 p2 bk
+#####
+##E##
+##.##
+#...#
+#...#
+#0#.#
+#####
+
+=== Output 5 ===
+p2
+tr p2
+tr bk p2
+tr p1 bk p2
+tr p1 p1 bk p2
+
+=== Input 6 ===
+p2 tl tr p1
+#####
+#1..#
+###.#
+###.#
+##..#
+##.##
+##E##
+
+=== Output 6 ===
+p2 tr
+p1 p2 tr
+p1 tl p2 tr
+
+=== Input 7 ===
+tl p1 p1 x2
+#####
+E.###
+#.###
+#.3##
+#.###
+#####
+#####
+
+=== Output 7 ===
+p1
+tl p1
+x2 tl p1
+x2 p1 tl p1
+
+=== Input 8 ===
+tr tl x2 p1 p1
+#####
+#####
+###E.
+####.
+#.##.
+#...3
+#####
+
+=== Output 8 ===
+p1
+x2 p1
+x2 tl p1
+x2 p1 tl p1
+x2 p1 tl p1 tr
+
+=== Input 9 ===
+tr tl p2 bk p1
+#####
+#####
+#####
+##E##
+#.G.#
+#0.##
+##.##
+
+=== Output 9 ===
+p1 tr
+p1 bk tr
+tl p1 bk tr
+
+=== Input 10 ===
+p1 tr tl p2 x2
+#####
+#..E#
+#...#
+#..##
+##..#
+#.0.#
+#.k##
+
+=== Output 10 ===
+tr
+tr p1
+x2 tr p1
+x2 p2 tr p1
+
+=== Input 11 ===
+tl p1 p1 p2 uk
+#####
+E...#
+#.ddr
+....#
+.0..#
+.k..#
+#####
+
+=== Output 11 ===
+tl
+tl p1
+uk tl p1
+uk tl p1 p1
+uk p2 tl p1 p1
+
+=== Input 12 ===
+zr tl p1 p1 nop p2
+#####
+#####
+E..##
+#..##
+##..#
+##.3#
+#####
+
+=== Output 12 ===
+zr p1
+zr p1 nop
+zr p1 p1 nop
+zr p1 p1 tl nop
+
+=== Input 13 ===
+tl x2 p2 zl p1
+#####
+#..E#
+#...#
+#k..#
+#ddr#
+#...#
+#..0#
+
+=== Output 13 ===
+p1
+x2 p1
+x2 p1 tl
+x2 p1 tl p2
+zl x2 p1 tl p2
+
